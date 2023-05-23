@@ -1,0 +1,11 @@
+<?php if($block->getPaymentMethod() == $block->getConfigPaymentData()) {?>
+<div class="rk button">
+	
+<?php
+    echo "<br><h2 align='center'>Order Compleated,Please wait we are redirecting you to shurjoPay...</h2><br>";
+    
+	echo "<meta http-equiv='refresh' content='0;url=".$block->getPostData()."'>";
+	
+?>
+
+<?php } ?>
