@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+      
+    <default>
+    <payment>
+      <shurjopay>
+        <active>1</active>
+                <title>shuroPay Payment Gateway</title>
+                <!-- <login_id backend_model="Magento\Config\Model\Config\Backend\Encrypted" /> -->
+                <pass_word_1 backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <order_status>pending_payment</order_status>
+                <instructions>Pay via Shurjopay.</instructions>
+                <payment_action>true</payment_action>
+                <test>1</test>
+                <model>shurjomukhi\shurjopay\Model\Shurjopay</model>
+                <group>offline</group>
+                <cgi_url_test_mode>https://www.sandbox.shurjopayment.com</cgi_url_test_mode>
+                <cgi_url>https://engine.shurjopayment.com</cgi_url>
+      </shurjopay>
+    </payment>
+  </default>
+
+</config>

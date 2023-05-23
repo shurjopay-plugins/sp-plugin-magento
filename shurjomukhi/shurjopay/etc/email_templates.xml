@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:Magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="shurjopay_success_template" label="Order Successful" file="shurjopay/successemail.html" type="html" module="shurjomukhi_shurjopay" area="frontend"/>
+    
+    <template id="shurjopay_fail_template" label="Order Failed" file="shurjopay/failemail.html" type="html" module="shurjomukhi_shurjopay" area="frontend"/>
+    
+    <template id="shurjopay_cancel_template" label="Order Canceled" file="shurjopay/cancelemail.html" type="html" module="shurjomukhi_shurjopay" area="frontend"/>
+</config>
